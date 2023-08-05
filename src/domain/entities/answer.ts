@@ -1,7 +1,6 @@
-import { randomUUID } from "node:crypto";
-import { Entity } from "../../core/entities/entities";
-import { UniqueEntityID } from "../../core/entities/unique-entity-id";
-import { Optional } from "../../core/entities/types/optional";
+import { Entity } from "@/core/entities/entities";
+import { UniqueEntityID } from "@/core/entities/unique-entity-id";
+import { Optional } from "@/core/entities/types/optional";
 
 interface AnswerProps {
   authorId: UniqueEntityID;
