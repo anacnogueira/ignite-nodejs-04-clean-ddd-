@@ -2,7 +2,7 @@ import { UniqueEntityID } from "./unique-entity-id";
 
 export abstract class Entity<Props> {
   private _id: UniqueEntityID;
-  protected props: any;
+  protected props: Props;
 
   get content() {
     return this.props;
@@ -12,7 +12,7 @@ export abstract class Entity<Props> {
     return this._id;
   }
 
-  protected constructor(props: any, id?: UniqueEntityID) {
+  protected constructor(props: Props, id?: UniqueEntityID) {
     this.props = props;
     this._id = id ?? new UniqueEntityID();
   }
