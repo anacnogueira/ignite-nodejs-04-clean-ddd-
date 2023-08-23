@@ -16,7 +16,7 @@ describe("Create Question", () => {
       authorId: "1",
       title: "Nova Pergunta",
       content: "Conteúdo da pergunta",
-      attachmentIds: ["1", "2"],
+      attachmentsIds: ["1", "2"],
     });
 
     expect(result.isRight()).toBe(true);
