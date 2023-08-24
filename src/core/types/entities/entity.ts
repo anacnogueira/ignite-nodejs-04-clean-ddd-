@@ -4,10 +4,6 @@ export abstract class Entity<Props> {
   private _id: UniqueEntityID;
   protected props: Props;
 
-  get content() {
-    return this.props;
-  }
-
   get id() {
     return this._id;
   }

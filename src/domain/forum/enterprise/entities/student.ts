@@ -10,7 +10,6 @@ export class Student extends Entity<StudentProps> {
     const student = new Student(
       {
         ...props,
-        createdAt: new Date(),
       },
       id
     );
