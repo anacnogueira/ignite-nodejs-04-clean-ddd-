@@ -9,7 +9,7 @@ interface NotificationProps {
   createAt: Date;
   readAt?: Date;
 }
-export class Notifications extends Entity<NotificationProps> {
+export class Notification extends Entity<NotificationProps> {
   get recipientId() {
     return this.props.recipientId;
   }
